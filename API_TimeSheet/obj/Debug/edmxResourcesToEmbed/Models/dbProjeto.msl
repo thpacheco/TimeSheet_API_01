@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ThiagoTimeSheetModelStoreContainer" CdmEntityContainer="ThiagoTimeSheetEntities">
+    <EntitySetMapping Name="Marcacao">
+      <EntityTypeMapping TypeName="ThiagoTimeSheetModel.Marcacao">
+        <MappingFragment StoreEntitySet="Marcacao">
+          <ScalarProperty Name="codigoIncidente" ColumnName="codigoIncidente" />
+          <ScalarProperty Name="descricaoAtividade" ColumnName="descricaoAtividade" />
+          <ScalarProperty Name="dataMarcacao" ColumnName="dataMarcacao" />
+          <ScalarProperty Name="saida" ColumnName="saida" />
+          <ScalarProperty Name="retornoAlmoco" ColumnName="retornoAlmoco" />
+          <ScalarProperty Name="saidaAlmoco" ColumnName="saidaAlmoco" />
+          <ScalarProperty Name="entrada" ColumnName="entrada" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="ThiagoTimeSheetModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="senha" ColumnName="senha" />
+          <ScalarProperty Name="usuario1" ColumnName="usuario" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

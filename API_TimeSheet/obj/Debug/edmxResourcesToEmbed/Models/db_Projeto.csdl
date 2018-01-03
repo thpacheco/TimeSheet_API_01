@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ThiagoTimeSheetModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Marcacao">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="entrada" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="saidaAlmoco" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="retornoAlmoco" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="saida" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="dataMarcacao" Type="DateTime" Precision="3" />
+    <Property Name="descricaoAtividade" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="codigoIncidente" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="usuario1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="senha" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ThiagoTimeSheetEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Marcacao" EntityType="Self.Marcacao" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+  </EntityContainer>
+</Schema>
