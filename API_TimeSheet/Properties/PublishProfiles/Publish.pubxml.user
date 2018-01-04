@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\ThiagoPacheco\Desktop\API_TimeSheet\publish\030118</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\ThiagoPacheco\Desktop\API_TimeSheet\publish\040118</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -85,7 +85,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/22/2013 07:43:40</publishTime>
     </File>
     <File Include="bin/API_TimeSheet.dll">
-      <publishTime>01/03/2018 17:24:21</publishTime>
+      <publishTime>01/04/2018 16:40:05</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>01/02/2018 14:28:02</publishTime>

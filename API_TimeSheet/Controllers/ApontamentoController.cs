@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Globalization;
 using System.Net;
 using System.Net.Http;
+using System.Text.RegularExpressions;
 using System.Web.Http;
 using API_TimeSheet.DAO.RepositoryDAO;
 using API_TimeSheet.Models;
 using MongoDB.Bson;
 using MongoDB.Driver.Builders;
+using Extension;
 
 namespace API_TimeSheet.Controllers
 {
@@ -62,7 +65,6 @@ namespace API_TimeSheet.Controllers
         {
             try
             {
-
                 var apontamento = apontamentoRepository.Listar();
 
                 if (apontamento == null) throw new Exception("Cliente não encontrado");
@@ -97,22 +99,15 @@ namespace API_TimeSheet.Controllers
         }
 
         [HttpGet]
-        [Route("apontamentos/consultar-apontamento/{idUsuario}/{dataMarcacao}")]
-        public HttpResponseMessage BuscarApontamentoDoDia(string idUsuario, DateTime dataMarcacao)
+        [Route("apontamento/consultar-apontamento/{idUsuario}/{dataMarcacao}")]
+        public HttpResponseMessage BuscarApontamentoDoDia(string idUsuario, [FromUri]string dataMarcacao)
         {
             try
             {
-
-                idUsuario = "5a4bcf4f7a0052364c68617f";
                 var apontamento = apontamentoRepository
-                    .Consultar(c => c.IdUsuario == idUsuario);
+                    .Consultar(c => c.IdUsuario == idUsuario && c.DataMarcacao == dataMarcacao.FormatarData());
 
-                string DataMarcacao = "03/01/2018";
-
-                var apontamentoComData = apontamentoRepository
-                    .Consultar(c => c.DataMarcacao == DataMarcacao);
-
-                if (apontamentoComData == null) throw new Exception("Cliente não encontrado");
+                if (apontamento == null) throw new Exception("Cliente não encontrado");
                 return Request.CreateResponse(HttpStatusCode.OK, apontamento);
             }
             catch (Exception ex)
@@ -122,6 +117,24 @@ namespace API_TimeSheet.Controllers
             }
         }
 
+        /// <summary>
+        /// Convert a UTC Date String of format yyyyMMddThhmmZ into a Local Date
+        /// </summary>
+        /// <param name="dateString"></param>
+        /// <returns></returns>
+        private string BuildDateTimeFromYAFormat(string dateString)
+        {
+            Regex r = new Regex(@"^\d{4}\d{2}\d{2}T\d{2}\d{2}Z$");
+            if (!r.IsMatch(dateString))
+            {
+                throw new FormatException(
+                    string.Format("{0} is not the correct format. Should be yyyyMMddThhmmZ", dateString));
+            }
+
+            DateTime dt = DateTime.ParseExact(dateString, "yyyyMMddThhmmZ", CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal);
+
+            return dt.ToShortDateString();
+        }
 
         [HttpDelete]
         [Route("Excluir/{id}")]

@@ -80,3 +80,4 @@ C:\Users\ThiagoPacheco\Desktop\API_TimeSheet\API_TimeSheet\bin\Microsoft.AI.Web.
 C:\Users\ThiagoPacheco\Desktop\API_TimeSheet\API_TimeSheet\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\ThiagoPacheco\Desktop\API_TimeSheet\API_TimeSheet\bin\Microsoft.ApplicationInsights.xml
 C:\Users\ThiagoPacheco\Desktop\API_TimeSheet\API_TimeSheet\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ThiagoPacheco\Desktop\API_TimeSheet\API_TimeSheet\obj\Debug\API_TimeSheet.csprojResolveAssemblyReference.cache

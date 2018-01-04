@@ -242,6 +242,7 @@
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ModelsService\ApontamentoModelsService\IApontamento.cs" />
+    <Compile Include="Util\Extension.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
