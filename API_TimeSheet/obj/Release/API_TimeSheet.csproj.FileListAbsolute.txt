@@ -138,14 +138,6 @@ C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bi
 C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\Microsoft.ApplicationInsights.xml
 C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\MongoDB.Bson.pdb
-C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\MongoDB.Bson.xml
-C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\MongoDB.Driver.pdb
-C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\MongoDB.Driver.xml
-C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\MongoDB.Driver.Core.pdb
-C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\MongoDB.Driver.Core.xml
-C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\MongoDB.Driver.GridFS.pdb
-C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\MongoDB.Driver.GridFS.xml
 C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\MongoDB.Driver.Legacy.xml
 C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\ThiagoPacheco\Desktop\Desenvolvimento\TimeSheet_API_01\API_TimeSheet\bin\Newtonsoft.Json.xml

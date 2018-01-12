@@ -1,6 +1,4 @@
-﻿using System;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
 
 namespace API_TimeSheet.Models
 {
@@ -19,5 +17,11 @@ namespace API_TimeSheet.Models
         public string Saida { get; set; }
 
         public string DataMarcacao { get; set; }
+
+        public string HorasTotalDia { get; set; }
+
+        public string DescricaoAtividade { get; set; }
+
+        public string CodigoAtividade { get; set; }
     }
 }

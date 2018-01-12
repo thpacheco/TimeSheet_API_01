@@ -197,6 +197,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\ConfigApiJsonFormatter.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -230,6 +231,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\ApontamentoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DAO\Data\ConfigData\ConectionData.cs" />
     <Compile Include="DAO\RepositoryDAO\IRepository.cs" />
@@ -240,6 +242,7 @@
     <Compile Include="ModelsService\ApontamentoModelsService\ApontamentoModelSerice.cs" />
     <Compile Include="Models\Apontamento.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ModelsService\ApontamentoModelsService\IApontamento.cs" />
     <Compile Include="Util\Extension.cs" />
